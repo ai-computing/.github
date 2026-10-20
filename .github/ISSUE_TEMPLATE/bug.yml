@@ -1,0 +1,43 @@
+name: Bug report
+description: Something is wrong, slow, or crashes
+labels: [bug]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem
+      description: What goes wrong, and in which situation?
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Evidence and reproduction
+      description: Steps or command to reproduce, logs, measurements. Do not paste IPs, hostnames or secrets.
+      render: shell
+    validations:
+      required: true
+  - type: textarea
+    id: environment
+    attributes:
+      label: Environment
+      description: Commit or version, hardware (CPU/GPU/NPU), driver and SDK versions, OS, Kubernetes version if relevant
+    validations:
+      required: true
+  - type: textarea
+    id: scope
+    attributes:
+      label: Scope
+      description: What a fix should cover, and what is out of scope
+  - type: textarea
+    id: done
+    attributes:
+      label: Done when
+      description: The result that lets us close this (e.g. the reproduction passes, a regression test exists)
+    validations:
+      required: true
+  - type: input
+    id: owner
+    attributes:
+      label: Owner
+      description: Who takes the next step (leave empty if unknown)
