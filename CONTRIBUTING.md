@@ -76,7 +76,9 @@ States: Backlog → Ready → In progress → In review → Done. Labels: `bug`,
 - Default merge method: **Squash and merge** (one PR = one commit on the default branch). Delete the branch
   afterwards and start the next change from the updated default branch.
 - If a merged change has to be undone, revert it with a PR and record the cause and follow-up in the Issue.
-- Protected default branches: changes through PRs only, required CI checks, no force-push or deletion.
+- Repository settings: squash merge is the only merge method and merged branches are deleted automatically.
+  The default branch takes changes through PRs only, never by direct or force push. This is the rule, not yet
+  enforced by a branch ruleset.
 
 ## 5. Releases
 
