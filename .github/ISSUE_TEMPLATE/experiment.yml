@@ -1,0 +1,41 @@
+name: Research hypothesis
+description: One hypothesis to test; link the individual runs to this Issue
+labels: [experiment]
+body:
+  - type: textarea
+    id: hypothesis
+    attributes:
+      label: Hypothesis
+      description: What do we expect, and why?
+    validations:
+      required: true
+  - type: textarea
+    id: setup
+    attributes:
+      label: Setup
+      description: Baseline and variants, hardware, model, inputs/traces, settings; the comparison must be under the same conditions
+    validations:
+      required: true
+  - type: textarea
+    id: metrics
+    attributes:
+      label: Metrics and correctness criterion
+      description: e.g. SLO attainment, TTFT/TPOT p90, goodput per card, tok/J; token-exactness or tolerance
+    validations:
+      required: true
+  - type: textarea
+    id: done
+    attributes:
+      label: Done when
+      description: The result that confirms or refutes the hypothesis (a negative result also closes it)
+    validations:
+      required: true
+  - type: textarea
+    id: runs
+    attributes:
+      label: Runs
+      description: Link each run (commit SHA, command, result file or run ID) as comments or here
+  - type: input
+    id: owner
+    attributes:
+      label: Owner

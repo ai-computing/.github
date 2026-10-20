@@ -1,0 +1,41 @@
+name: Feature or change
+description: A new capability, backend, performance improvement, or API / file-format change
+labels: [feature]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem
+      description: What is missing today, and for whom?
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Evidence
+      description: Measurements, traces, user reports or prior work that motivate it
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposal
+      description: The intended design. For large or API-changing work, agree on this here before implementing.
+  - type: textarea
+    id: scope
+    attributes:
+      label: Scope
+      description: What this Issue covers and what it does not
+    validations:
+      required: true
+  - type: textarea
+    id: done
+    attributes:
+      label: Done when
+      description: >-
+        Concrete acceptance criteria, e.g. "existing correctness tests pass; latency compared before/after on
+        the agreed inputs; commands and results recorded; any regressions explained"
+    validations:
+      required: true
+  - type: input
+    id: owner
+    attributes:
+      label: Owner

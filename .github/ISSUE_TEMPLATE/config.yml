@@ -1,0 +1,5 @@
+blank_issues_enabled: true
+contact_links:
+  - name: Security vulnerability
+    url: https://github.com/ai-computing/.github/blob/main/CONTRIBUTING.md#6-security-and-data
+    about: Report vulnerabilities privately to the maintainers, not in a public Issue.
